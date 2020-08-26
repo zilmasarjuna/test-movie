@@ -1,7 +1,9 @@
 import { combineReducers } from 'redux'
 
-import request from './Request'
+import listMovie from './Movie/List'
+import detailMovie from './Movie/Detail'
 
 export default combineReducers({
-  request
+  listMovie,
+  detailMovie
 })

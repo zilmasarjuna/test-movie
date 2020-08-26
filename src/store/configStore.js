@@ -16,9 +16,10 @@ import config from '../config'
 const isDevelopment = config.node_env === 'development'
 
 export const mainPersistConfig = {
-  key: 'bntp_app',
+  key: 'movie_app',
   storage: localForage,
-  debug: isDevelopment
+  debug: isDevelopment,
+  blacklist: ['listMovie']
 }
 
 const middleware = [thunk]
@@ -28,7 +29,7 @@ if (isDevelopment) {
 }
 
 const reducers = combineReducers({
-  bntp: persistReducer(mainPersistConfig, rootReducer),
+  movie_store: persistReducer(mainPersistConfig, rootReducer),
 })
 
 const enhancers = [applyMiddleware(...middleware)]
