@@ -1,5 +1,6 @@
 .container-list {
-  margin: 30px;
+  margin: 80px auto;
+  position: relative;
 
   .wrap-item {
     margin-top: 30px;
@@ -7,13 +8,23 @@
     .img-list {
       width: 200px;
     }
+
+    .ant-list-item {
+      background-color: #fff;
+      margin-bottom: 20px;
+    }
   }
 }
 
 .container-detail {
-  margin: 30px;
+  margin: 80px auto;
 
   .img-detail {
     width: 100%;
+  }
+
+  .card-detail {
+    background-color: #fff;
+    padding: 20px;
   }
 }

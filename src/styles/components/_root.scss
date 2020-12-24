@@ -11,8 +11,12 @@ html {
   html { font-size: 12px; }
 }
 
+body {
+  background: #F5F6F8;
+}
+
 .container {
-  width: 1140px;
+  width: 780px;
   margin: 0 auto;
 
   @media screen and (max-width: 1200px){
